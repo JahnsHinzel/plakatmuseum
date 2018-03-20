@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1,0">
+    <meta name="description" content "">
+    <title>Dansk PlakatMuseum</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body bgcolor="white">
+
+ 
+    <!-- HEADER & NAVIGATION -->
+    <header id="header">
+        <img class="search" src="images/searchbar.png"> 
+        <section>
+            <a href="index.html">
+    <img class="logo" src="images/logo3.png" alt="Dansk Plakatmuseum">
+            </a>
+        </section>
+        </header>
+
+            <!-- MOBILE NAVIGATION -->
+            <section id="mobile">
+                <section id="mobile-menu">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="navigation-mobile">
+                        <li class="nav-item-1"><a href="qr.html">Scan QR kode</a></li>
+                        <li class="nav-item-2"><a href="1etage.html">1. Etage</a></li>
+                        <li class="nav-item-3"><a href="index.html">2. Etage</a></li>
+                        <li class="nav-item-4"><img class="logoburger" src="images/logo3.png"></li>
+
+                    </ul>
+                </section>
+            </section>
+    
+     <img class="streg" src="images/streg.png" alt="streg">
+    
+     <img id="lyd" src="images/lydon.png">
+    <img id="stoplyd" src="images/stoplyd.png">
+    <section id="titelpage">
+    <p>SORT PAA HVID (1918)</p></section>
+    <img class="synderindenpage" src="images/sortpaahvid.jpg" alt="synderinden">
+    <section id="tekstpage">
+    <p> "Bladet har de fleste glemt, men plakaten lever videre"
+    </p>
+    </section>
+    
+    <section id="tekstoverskrift">
+        <p>KULTURHISTORIE FRA EN SVUNDEN TID</p></section>
+         <section id="tekstpage2"><p>
+Plakatmesteren Sven Brasch tegnede både forside og annoncer for ugebladet Sort paa Hvidt, der skrev om litteratur og kunst og udkom første gang i 1917. Sven Braschs plakat Sort paa Hvidt er uhyre sjælden og har været efterspurgt af plakatsamlere i generationer. Nu er plakaten genoptrykt af Dansk Plakatkunst og dermed tilgængelig for alle. Motivet er et stykke kulturhistorie fra dengang i starten af 1900-tallet, hvor danskerne valfartede til udstillinger i Zoologisk Have og Tivoli for at opleve eksotiske folkeslag på nærmeste hold. Karrikerede tegninger af sorte, gule og røde mennesker var almindelige og harmløse set med datidens øjne.Bladet averterede tilmed i Ekstra Bladet efter to rigtige ”negre” til at forhandle og sælge bladet. Det lader ikke til, det lykkedes – annoncen blev indrykket i Ekstra Bladet 7. april 1918, og Sort paa Hvidt lukkede kort tid efter, det nåede kun at udkomme i 6 måneder.</p></section>
+    
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<!-- dit script herfra -->
+<script>
+    /**
+     * Dit script herfra
+     **/
+    
+    
+    var audio = new Audio('madslanger.mp3');
+    
+    
+
+     $('#lyd').click(
+        
+        function() {
+            console.log('jeg klikker der lisssom');
+            // musik herfra//
+            audio.play(); 
+            }   
+          );
+    
+    $('#stoplyd').click(
+         
+         function() {
+         console.log('jeg klikker ogsaa her');
+         //musik herfra//
+         audio.pause();
+     });
+  </script>
+    
+    </body>
+</html>    
